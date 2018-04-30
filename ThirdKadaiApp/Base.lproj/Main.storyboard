@@ -90,26 +90,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLY-aD-RTl">
-                                <rect key="frame" x="325" y="36" width="34" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8bk-jh-qw8">
+                                <rect key="frame" x="16" y="95" width="343" height="556"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4e-f4-VMP">
+                                <rect key="frame" x="316" y="35" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jzy-BL-fMA"/>
+                                </constraints>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="hgH-z8-7Pv" kind="unwind" unwindAction="unwindToTopWithSegue:" id="whr-G1-gwS"/>
+                                    <segue destination="hgH-z8-7Pv" kind="unwind" unwindAction="unwindToTopWithSegue:" id="xYw-ir-l0v"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8bk-jh-qw8">
-                                <rect key="frame" x="16" y="96" width="343" height="555"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kLY-aD-RTl" firstAttribute="top" secondItem="Frn-6g-gxU" secondAttribute="top" constant="16" id="8xM-Pf-22o"/>
-                            <constraint firstItem="Frn-6g-gxU" firstAttribute="trailing" secondItem="kLY-aD-RTl" secondAttribute="trailing" constant="16" id="HE1-CS-knZ"/>
+                            <constraint firstItem="y4e-f4-VMP" firstAttribute="leading" secondItem="Frn-6g-gxU" secondAttribute="leading" constant="316" id="3Cg-hs-Vhc"/>
+                            <constraint firstItem="y4e-f4-VMP" firstAttribute="top" secondItem="Frn-6g-gxU" secondAttribute="top" constant="15" id="EVA-w7-aMt"/>
                             <constraint firstItem="8bk-jh-qw8" firstAttribute="leading" secondItem="Frn-6g-gxU" secondAttribute="leading" constant="16" id="Xg9-IJ-TiI"/>
+                            <constraint firstItem="8bk-jh-qw8" firstAttribute="top" secondItem="y4e-f4-VMP" secondAttribute="bottom" constant="30" id="dZs-33-tmH"/>
                             <constraint firstItem="Frn-6g-gxU" firstAttribute="trailing" secondItem="8bk-jh-qw8" secondAttribute="trailing" constant="16" id="jg1-Gh-ELn"/>
-                            <constraint firstItem="kLY-aD-RTl" firstAttribute="leading" secondItem="Frn-6g-gxU" secondAttribute="leading" constant="325" id="nMf-fw-66o"/>
+                            <constraint firstItem="Frn-6g-gxU" firstAttribute="trailing" secondItem="y4e-f4-VMP" secondAttribute="trailing" constant="25" id="jww-2m-nen"/>
                             <constraint firstItem="Frn-6g-gxU" firstAttribute="bottom" secondItem="8bk-jh-qw8" secondAttribute="bottom" constant="16" id="rE9-fL-CFu"/>
-                            <constraint firstItem="8bk-jh-qw8" firstAttribute="top" secondItem="kLY-aD-RTl" secondAttribute="bottom" constant="30" id="zjf-D7-yt1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Frn-6g-gxU"/>
                     </view>
