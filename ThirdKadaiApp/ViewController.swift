@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     
     var displayImageNo = 0
@@ -32,14 +33,16 @@ class ViewController: UIViewController {
         displayImage()
     }
     
-    @IBAction func playButton(_ sender: Any) {
+    @IBAction func startOrPauseSlide(_ sender: Any) {
         if self.timer == nil {
+            playButton.setTitle("Pause", for: .normal)
         self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(onTimer), userInfo: nil, repeats: true)
             nextButton.isEnabled = false
             previousButton.isEnabled = false
             
         }
         else if self.timer != nil {
+            playButton.setTitle("Play", for: .normal)
             self.timer.invalidate()
             self.timer = nil
             nextButton.isEnabled = true

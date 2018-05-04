@@ -64,27 +64,19 @@
 		59B740262095E2AA0095C94B /* ThirdKadaiApp */ = {
 			isa = PBXGroup;
 			children = (
-				59B740432095E33D0095C94B /* IMG */,
 				59B740272095E2AA0095C94B /* AppDelegate.swift */,
 				59B740292095E2AA0095C94B /* ViewController.swift */,
 				59B740392095E2DC0095C94B /* EnlargementViewController.swift */,
 				59B7402B2095E2AA0095C94B /* Main.storyboard */,
 				59B7402E2095E2AD0095C94B /* Assets.xcassets */,
-				59B740302095E2AD0095C94B /* LaunchScreen.storyboard */,
-				59B740332095E2AD0095C94B /* Info.plist */,
-			);
-			path = ThirdKadaiApp;
-			sourceTree = "<group>";
-		};
-		59B740432095E33D0095C94B /* IMG */ = {
-			isa = PBXGroup;
-			children = (
 				59B7403C2095E32F0095C94B /* IMG_623.jpg */,
 				59B7403E2095E3300095C94B /* IMG_0753.jpg */,
 				59B7403B2095E32F0095C94B /* IMG_3458.jpg */,
 				59B7403D2095E32F0095C94B /* IMG_4743.jpg */,
+				59B740302095E2AD0095C94B /* LaunchScreen.storyboard */,
+				59B740332095E2AD0095C94B /* Info.plist */,
 			);
-			path = IMG;
+			path = ThirdKadaiApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
