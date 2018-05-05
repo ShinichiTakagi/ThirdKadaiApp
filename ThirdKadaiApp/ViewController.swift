@@ -96,6 +96,7 @@ class ViewController: UIViewController {
             let enlargementViewController = segue.destination as! EnlargementViewController
              enlargementViewController.image = imageView.image
             if self.timer != nil {
+                playButton.setTitle("Play", for: .normal)
                 self.timer.invalidate()
                 self.timer = nil
                 nextButton.isEnabled = true
